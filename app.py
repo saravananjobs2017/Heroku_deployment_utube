@@ -16,8 +16,8 @@ def renderHomePage():
     link_to_download = request.form['URL']
     download_metrics = YouTube(link_to_download)
     file = download_metrics.streams.get_highest_resolution()
-    file.download()
-    return 'download completed'
+    path=file.download()
+    return send_file(path, as_attachment=True)
 
 
 if __name__ == '__main__':
