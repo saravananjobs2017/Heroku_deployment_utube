@@ -14,7 +14,7 @@ variables:
   webAppName: 'coverone'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'centos'
 
   # Environment name
   environmentName: 'coverone'
